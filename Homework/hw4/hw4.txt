@@ -1,0 +1,21 @@
+CS161 Homework 4 
+Winter 20
+
+The graph from graph1.txt is unsatisfiable with 3 colors. 
+The graph is satiable with 4 colors.
+
+This is because the highest degree node has a degree of 4. Using the colors red, green, blue, and yellow, a solution can be defined as follows:
+
+four colors: RED, YELLOW, GREEN, BLUE. 
+
+Color Node 1 RED.
+Color Node 2 YELLOW.
+Color Node 5 GREEN.
+Color Node 6 BLUE.
+Color Node 7 GREEN. 
+Color Node 3 RED. 
+Color Node 4 YELLOW. 
+
+
+The graph extracted from graph2.txt is much more massive. 
+It requires 8 more or colors to be a satisfiable instance. 

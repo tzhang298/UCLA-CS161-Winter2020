@@ -1,0 +1,53 @@
+1. In the 1st question, using the PAD function with large numbers will be
+very slow because the time complexity of the algorithm is O(2^n).
+So it is okay for smaller numbers, but if the number gets bigger the pace will
+be very slow.
+
+(PAD 0) returns 1
+(PAD 1) returns 1
+(PAD 2) returns 1
+(PAD 3) returns 2
+(PAD 4) returns 2
+(PAD 5) returns 3
+(PAD 6) returns 4
+(PAD 7) returns 5
+(PAD 8) returns 7
+(PAD 9) returns 9
+(PAD 10) returns 12
+(PAD 11) returns 16
+(PAD 12) returns 21
+(PAD 13) returns 28
+(PAD 14) returns 37
+
+2.
+We used similar algorithms for SUMS and PAD. The result of SUMS is the result
+minus one of PAD with same parameter.This is because the base case of PAD
+is 1 since it is assigned. The base case of SUMS is 0 because no addition is
+need if we already know the answer.
+
+(SUMS 0) returns 0
+(SUMS 1) returns 0
+(SUMS 2) returns 0
+(SUMS 3) returns 1
+(SUMS 4) returns 1
+(SUMS 5) returns 2
+(SUMS 6) returns 3
+(SUMS 7) returns 4
+(SUMS 8) returns 6
+(SUMS 9) returns 8
+(SUMS 10) returns 11
+(SUMS 11) returns 15
+(SUMS 12) returns 20
+(SUMS 13) returns 27
+(SUMS 14) returns 36
+
+3.
+The result of ANON is follows: 
+
+(ANON '42) returns ?
+(ANON 'FOO) returns ?
+(ANON '(((L E) F) T)) returns (((? ?) ?) ?)
+(ANON '(5 FOO 3.1 -0.2)) returns (? ? ? ?)
+(ANON '(1 (FOO 3.1) -0.2)) returns (? (? ?) ?)
+(ANON '(((1 2) (FOO 3.1)) (BAR -0.2))) returns (((? ?) (? ?)) (? ?))
+(ANON '(R (I (G (H T))))) returns (? (? (? (? ?))))
